@@ -16,7 +16,7 @@
 }
 
 .container-div-header {
-    width: 60%;
+    width: 63%;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -35,7 +35,7 @@
     border: none;
     outline: none;
     height: 3vh;
-    width: 20vw;
+    width: 23vw;
     font-size: 2vh;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .button-add {
-    width: 20vw;
+    width: 18vw;
     height: 5vh;
     border-radius: 0.4rem;
     padding: 0.4rem;
@@ -168,6 +168,7 @@ span {
 }
 
 .list-aside h2{
+    padding: 0 3px;
     display: flex;
     margin-top: 2vh;
     justify-content: center;
@@ -280,10 +281,6 @@ span {
 
 /* media querys */
 @media (max-width: 1000px){
-    .button-add {
-        width: 24vw;
-    }
-
     .container-title-section {
         margin: 1rem 0 2rem 0;
     }
@@ -298,22 +295,101 @@ span {
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 800px){
+    .container-div-header {
+        width: 75%;
+    }
+    
+    .input-header {
+        height: 2.5vh;
+        width: 30vw;
+        font-size: 1.5vh;
+    }
+    
+    .button-search {
+        width: 13vw;
+        height: 4vh;
+    }
+    
     .button-add {
-        width: 40vw;
+        width: 23vw;
+        height: 4vh;
+    }
+
+    .container-main {
+        grid-template-columns: 0.3fr 1.6fr;
+    }
+
+    .div-popUp {
+        width: 68vw;
+        height: 53vh;
+    }
+
+    .container-titulo-popUp {
+        font-size: 2vh;
+        padding: 1.5vh 0 1px 0;
+    }
+    
+    .container-product-store {
+        grid-template-columns: repeat(2, 0.3fr);
+    }
+
+    .container-target-item {
+        width: 28vw;
+    }
+
+    .container-target-item h2 {
+        font-size: 15px;
+    }
+
+    .list-aside ul li {
+        padding: 0.3rem 0.7rem;
+    }
+
+}
+
+@media (max-width: 500px){
+    .container-div-header {
+        width: 86%;
+    }
+    
+    .input-header {
+        width: 25vw;
+        font-size: 1.5vh;
+    }
+    
+    .button-search {
+        width: 18vw;
+        height: 4vh;
+        font-size: 12px;
+    }
+    
+    .button-add {
+        width: 30vw;
+    }
+
+    .div-popUp {
+        width: 85vw;
+    }
+
+    .container-titulo-popUp {
+        font-size: 1.8vh;
     }
 
     .container-title-section {
-        margin: 1rem 0 2rem 0;
+        font-size: 2vh;
+    }
+
+    .list-aside h2{
+        font-size: 2.5vh;
+    }
+
+    .material-symbols-outlined {
+        font-size: medium;
     }
 
     .container-product-store {
-        grid-template-columns: repeat(3, 0.3fr);
-        gap: 4vh;
-    }
-    
-    .container-target-item {
-        width: 21vw;
+        grid-template-columns: repeat(1, 0.3fr);
     }
 }
 
