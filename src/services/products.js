@@ -59,7 +59,7 @@ export const handleDeleteProduct = () => {
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
         confirmButtonText: "Sí, eliminar!"
-      }).then((result) => {
+    }).then((result) => {
         if (result.isConfirmed) {
             const products = handleGetProductLocalStorage();
             const result = products.filter((el) => el.id !== prodictoActivo.id);

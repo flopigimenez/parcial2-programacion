@@ -1,6 +1,6 @@
 // ---POPUP---
 import { prodictoActivo, setProductoActivo } from "../../main";
-import { handleDeleteProduct, handleSaveOrModifyElements } from "../services/products";
+import { handleDeleteProduct} from "../services/products";
 
 const cancelButton = document.getElementById("cancelButton");
 cancelButton.addEventListener("click", () => {
